@@ -1,1 +1,3 @@
-creds.bat
+creds.ps1
+.terraform/
+.terraform.lock.hcl
