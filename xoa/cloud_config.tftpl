@@ -1,0 +1,14 @@
+#cloud-config
+hostname: ${hostname}
+user: root
+chpasswd: {expire: false}
+password: metoo
+disable_root: false
+ssh_pwauth: true
+manage_etc_hosts: true
+fqdn: ${hostname}.${domain}
+package_upgrade: true
+runcmd:
+- echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config
+- localectl set-keymap no
+- systemctl restart ssh

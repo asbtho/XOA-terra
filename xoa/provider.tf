@@ -10,9 +10,9 @@ terraform {
 # Configure the XenServer Provider
 provider "xenorchestra" {
   # Must be ws or wss
-  url      = "ws://hostname-of-server" # Or set XOA_URL environment variable
-  username = "<username>"              # Or set XOA_USER environment variable
-  password = "<password>"              # Or set XOA_PASSWORD environment variable
+  url      = "ws://192.168.0.195" # Or set XOA_URL environment variable
+  username = ""              # Or set XOA_USER environment variable
+  password = ""              # Or set XOA_PASSWORD environment variable
 
   # This is false by default and
   # will disable ssl verification if true.
