@@ -1,5 +1,9 @@
 creds.ps1
-.terraform/
-.terraform.lock.hcl
-terraform.tfstate
-terraform.tfstate.backup
+/D-VM/.terraform/
+/D-VM/.terraform.lock.hcl
+/D-VM/terraform.tfstate
+/D-VM/terraform.tfstate.backup
+/K-VM/.terraform/
+/K-VM/terraform.lock.hcl
+/K-VM/terraform.tfstate
+/K-VM/terraform.tfstate.backup

@@ -20,7 +20,7 @@ data "xenorchestra_network" "network" {
 resource "xenorchestra_vm" "vm" {
   memory_max = 4294967296
   cpus = 4
-  name_label = "XO terraform tutorial"
+  name_label = "Terraform Debian"
   template = data.xenorchestra_template.vm_template.id
 
   network {
@@ -34,7 +34,7 @@ resource "xenorchestra_vm" "vm" {
   }
 
   cloud_config = templatefile("cloud_config.tftpl", {
-    hostname = "terratest"
+    hostname = "terradebian"
     domain = "ozzy.lan"
   })
   cloud_network_config = templatefile("cloud_network_config.tftpl", {

@@ -10,7 +10,7 @@ terraform {
 # Configure the XenServer Provider
 provider "xenorchestra" {
   # Must be ws or wss
-  url      = "ws://192.168.0.195" # Or set XOA_URL environment variable
+  url      = "ws://192.16" # Or set XOA_URL environment variable
   username = ""              # Or set XOA_USER environment variable
   password = ""              # Or set XOA_PASSWORD environment variable
 
